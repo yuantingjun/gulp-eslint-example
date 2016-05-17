@@ -1,0 +1,96 @@
+{
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "angular": true
+  },
+  "reset": true,
+  "rules": {
+    // 字符串使用单引号
+    /*"quotes": [2, "single", {
+        "avoidEscape": true
+      }
+    ],*/
+    //每行只能声明一个变量
+    /*"max-statements-per-line": [
+      2,
+      {
+        "max": 1
+      }
+    ],*/
+    //操作符加空格
+    /*"space-unary-ops": [
+      2,
+      {
+        "words": true,
+        "nonwords": true,
+        "overrides": {
+          "++": false,
+          "--": false,
+          "!": false,
+          "!!": false
+        }
+      }
+    ],*/
+    //对象中关键字的空格
+    /*"key-spacing": [2,{
+        "singleLine": {
+          "beforeColon": false,
+          "afterColon": true
+        },
+        "multiLine": {
+          "beforeColon": false,
+          "afterColon": true
+          //"align": "colon"
+        }
+      }
+    ],*/
+    //关键字前要加空格
+    /*"keyword-spacing": 2,*/
+    //不要写空方法
+    /*"no-empty-function": 2,*/
+
+    // 三个＝号
+    "eqeqeq": 2,
+    //不要有行内注释
+    "no-inline-comments": 2,
+    //不要有多余的逗号
+    "no-extra-semi": 2,
+    //必要时加；
+    "semi": 2,
+    //块前加空格
+    "space-before-blocks": 2,
+    //逗号前面不加空格，逗号后面加空格
+    "comma-spacing": [
+      2,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    //函数左｛前加空格
+    "space-before-function-paren": 2,
+    //驼峰式命名
+    "camelcase": 2,
+    //代码块要加｛｝
+    "curly": 2,
+    //尽量用.取对象的属性
+    "dot-notation": 2,
+    //代码要有缩进，默认4个空格
+    "indent": 2,
+    //如果if中有return，不要再写else
+    "no-else-return": 2,
+    //paesrInt中，要写转换的基数
+    "radix": 2,
+    //不要声明无用变量
+    "no-unused-vars": 2,
+    //不要加不必要的逗号
+    "comma-dangle": [
+      2,
+      "never"
+    ],
+    //不要写空的代码块
+    "no-empty": 2
+  }
+}
