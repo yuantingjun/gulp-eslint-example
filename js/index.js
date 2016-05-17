@@ -1,7 +1,1 @@
-/*
-console.log("foo")
- var a = 1;
-{
-
-}
-var obj = { "foo" : 42 };*/
+var a = 1;
