@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-    eslint = require('gulp-eslint');
+    eslint = require('gulp-eslint'),
+    rename = require("gulp-rename");
 
 gulp.task('lint', function () {
     return gulp.src(['js/**/*.js'])
@@ -14,7 +15,13 @@ gulp.task('lint', function () {
         .pipe(eslint.failOnError());
 });
 
+gulp.task('copy-pre-commit-hook', function () {
+    gulp.src('.eslint-pre-commit-hook')
+        .pipe(rename("pre-commit"))
+        .pipe(gulp.dest('.git/hooks'));
+});
+
 gulp.task('default', ['lint'], function () {
     // This will only run if the lint task is successful...
-    console.log('gulp task lint has been successful')
+    console.log('gulp task lint has been successful');
 });
