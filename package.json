@@ -11,6 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "eslint": "^0.24.1",
+    "grunt": "^1.0.1",
+    "grunt-eslint": "^18.1.0",
     "gulp": "^3.9.0",
     "gulp-eslint": "^0.15.0",
     "gulp-rename": "^1.2.2"
