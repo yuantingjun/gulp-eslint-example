@@ -1,6 +1,6 @@
-var gulp = require('gulp'),
-    eslint = require('gulp-eslint'),
-    rename = require("gulp-rename");
+var gulp = require('gulp');
+var eslint = require('gulp-eslint');
+var rename = require("gulp-rename");
 
 gulp.task('lint', function () {
     return gulp.src(['js/*.js'])
